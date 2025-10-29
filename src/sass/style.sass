@@ -1,3 +1,48 @@
 @import "normalizez.scss"
 @import "resets.scss"
 
+*
+    box-sizing: border-box
+
+$color-blue: #5290ea
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.main-section
+    height: 800px
+    background: #E0E0E0
+    padding-top: 16px
+    position: relative // Добавляем для корректного позиционирования абсолютных элементов
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+    &__logo
+        width: 134px
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+        gap: 64px
+    &__list-item
+        font-size: 18px
+
+.left-wrapper__img
+    position: relative // Это тоже важно для позиционирования rectangle-blue
+    z-index: 0
+    &__rectangle-blue
+        position: absolute
+        top: 162px
+        left: 50px
+        border-radius: 100px
+        width: 565px
+        height: 220px
+        background: $color-blue // Исправлено: убрал лишний _
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        transform: rotate(64deg)
+        z-index: 1 // Добавляем z-index для контроля слоев
