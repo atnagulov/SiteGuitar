@@ -5,6 +5,8 @@
     box-sizing: border-box
 
 $color-blue: #5290ea
+$color-orange: #f28b64
+$color-grey: #E2E2E2
 
 .container
     max-width: 1140px
@@ -32,9 +34,11 @@ $color-blue: #5290ea
     &__list-item
         font-size: 18px
 
-.left-wrapper__img
+.left-wrapper
     position: relative // Это тоже важно для позиционирования rectangle-blue
-    z-index: 0
+    img
+        position: relative
+        z-index: 1
     &__rectangle-blue
         position: absolute
         top: 162px
@@ -42,7 +46,26 @@ $color-blue: #5290ea
         border-radius: 100px
         width: 565px
         height: 220px
-        background: $color-blue // Исправлено: убрал лишний _
+        background: $color-blue
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
-        transform: rotate(64deg)
-        z-index: 1 // Добавляем z-index для контроля слоев
+        transform: rotate(-64deg)
+    &__rectangle-orange
+        position: absolute
+        top: 190px
+        left: 94px
+        border-radius: 100px
+        width: 618px
+        height: 220px
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        background: $color-orange
+        transform: rotate(137deg)
+    &__rectangle-grey
+        position: absolute
+        top: 190
+        left: 10
+        border-radius: 100px
+        width: 190px
+        height: 220px
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        background: $color-grey
+        transform: rotate(150deg)
