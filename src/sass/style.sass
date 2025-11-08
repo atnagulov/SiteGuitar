@@ -4,19 +4,16 @@
 *
     box-sizing: border-box
 
-$color-blue: #5290ea
-$color-orange: #f28b64
-$color-grey: #E2E2E2
+$color-blue: #5290EA
+$color-orange: #F28B64
 
 .container
     max-width: 1140px
     margin: 0 auto
-
 .main-section
     height: 800px
-    background: #E0E0E0
+    background: #F0F0F0
     padding-top: 16px
-    position: relative // Добавляем для корректного позиционирования абсолютных элементов
     &__nav-container
         display: flex
         flex-direction: row
@@ -25,47 +22,118 @@ $color-grey: #E2E2E2
         align-items: center
     &__logo
         width: 134px
+    &__content-container
+        position: relative
+        display: flex
+        flex-direction: row
 
 .nav-menu
     &__list
         display: flex
         flex-direction: row
-        gap: 64px
     &__list-item
+        margin-right: 64px
         font-size: 18px
+        &:last-child
+            margin-right: 0px
 
 .left-wrapper
-    position: relative // Это тоже важно для позиционирования rectangle-blue
+    position: relative
     img
         position: relative
-        z-index: 1
+        z-index: 5
     &__rectangle-blue
         position: absolute
-        top: 162px
-        left: 50px
-        border-radius: 100px
-        width: 565px
+        top: 150px
+        left: -50px
+        width: 565.95px
         height: 220px
         background: $color-blue
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         transform: rotate(-64deg)
+        z-index: 2
     &__rectangle-orange
         position: absolute
-        top: 190px
-        left: 94px
-        border-radius: 100px
-        width: 618px
+        width: 618.43px
         height: 220px
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        left: -30px
+        top: 160px
         background: $color-orange
-        transform: rotate(137deg)
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        transform: rotate(-50.81deg)
+        z-index: 3
     &__rectangle-grey
         position: absolute
-        top: 190
-        left: 10
-        border-radius: 100px
-        width: 190px
+        width: 608.97px
         height: 220px
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
-        background: $color-grey
-        transform: rotate(150deg)
+        left: 10px
+        top: 190px
+        background: #E2E2E2
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        transform: rotate(-36.15deg)
+        z-index: 1
+
+.right-wrapper
+    width: 372px
+    position: absolute
+    top: 150px
+    right: 76px
+    &__icons-box
+        margin-bottom: 1px
+        padding-left: 10px
+    &__title
+        margin-bottom: 5px
+    &__text
+        font-size: 16px
+        margin-bottom: 20px
+
+.icons
+    display: inline-flex
+
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 1px solid $color-blue
+        border-radius: 100px
+        margin-right: 17px
+        &:last-child
+            margin-right: 0px
+        i
+            font-size: 21px
+
+.title
+    font-size: 72px
+    position: relative
+    &__hr
+        width: 65px
+        position: absolute
+        bottom: 0px
+        margin: 0
+        border: none
+        border-top: 1px solid black
+
+.buttons
+    display: inline-flex
+    &__main-btn
+        margin-right: 32px
+        width: 200px
+        height: 60px
+        background: $color-orange
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 100px
+        border: none
+        font-size: 18px
+        color: white
+    &__icon-btn
+        display: inline-flex
+        align-items: center
+        img
+            margin-right: 12px
+    &__text
+        font-size: 16px
