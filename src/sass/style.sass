@@ -1,9 +1,71 @@
 @import "normalizez.scss"
 @import "resets.scss"
 
+*
+    box-sizing: border-box
+
+$color-blue: #5290EA
+$color-orange: #f28b64
+
 .container
     max-width: 1140px
     margin: 0 auto
 .main-section
-    height: 800
+    height: 800px
     background: #f0f0f0
+    padding-top: 16px
+    &__logo
+        width: 134px
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 69px
+        align-items: center
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 65px
+        font-size: 18px
+        &:last-child
+            margin-right: 0px
+.left-wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 5
+    &__rectangle-blue
+        position: absolute
+        top: 150px
+        left: -50px
+        width: 565.95px
+        height: 220px
+        border-radius: 100px
+        background: $color-blue
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        transform: rotate(107deg) 
+        z-index: 3
+    &__rectangle-orange
+        position: absolute
+        top: 160px
+        left: -30px
+        width: 618px
+        height: 220px
+        border-radius: 100px
+        background: $color-orange
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        transform: rotate(118deg)
+        z-index: 2
+    &__rectangle-white
+        position: absolute
+        top: 170px
+        left: 20px
+        border-radius: 100px
+        width: 608px
+        height: 220px
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+        background: #e2e2e2
+        transform: rotate(129deg)
+        z-index: 1
