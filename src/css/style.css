@@ -721,6 +721,12 @@ textarea {
   align-items: center;
 }
 
+.main-section__content-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
 .nav-menu__list {
   display: flex;
   flex-direction: row;
@@ -781,5 +787,112 @@ textarea {
   background: #e2e2e2;
   transform: rotate(129deg);
   z-index: 1;
+}
+
+.right-wrapper {
+  width: 372px;
+  position: relative;
+  top: 166px;
+  right: 203px;
+}
+
+.right-wrapper__icons-box {
+  margin-bottom: 1px;
+  padding-left: 10px;
+}
+
+.right-wrapper__title {
+  margin-bottom: 5px;
+}
+
+.right-wrapper__text {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.icons {
+  display: inline-flex;
+  gap: 17px;
+}
+
+.icons__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #5290EA;
+  border-radius: 100px;
+}
+
+.icons__item i {
+  font-size: 21px;
+}
+
+.title {
+  font-size: 72px;
+  position: relative;
+}
+
+.title__hr {
+  width: 65px;
+  position: absolute;
+  bottom: 0px;
+  margin: 0;
+  border: none;
+  border-top: 1px solid black;
+}
+
+.buttons {
+  display: inline-flex;
+}
+
+.buttons__icon-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.buttons__icon-btn img {
+  margin-right: 12px;
+}
+
+.buttons__main-btn {
+  text-align: center;
+  border-radius: 100px;
+  width: 200px;
+  height: 60px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  background: #f28b64;
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 32px;
+}
+
+.elipse {
+  width: 194px;
+  height: 194px;
+  background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%);
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elipse__dig {
+  width: 282px;
+  height: 282px;
+}
+
+.elipse__subtract {
+  width: 129.33px;
+  height: 129.33px;
+  background: #F0F0F0;
+  border-radius: 150px;
+}
+
+.elipse__subtract__big {
+  width: 188px;
+  height: 188px;
 }
 /*# sourceMappingURL=style.css.map */
