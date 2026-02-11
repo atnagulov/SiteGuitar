@@ -166,5 +166,63 @@ $color-orange: #F28B64
         background: #F0F0F0
         border-radius: 150px
 
-    .second-section
-        min-height: 700px
+.second-section
+    min-height: 700px
+    position: relative
+    &__container
+        padding-top: 32px
+    &__title
+        margin-bottom: 40px
+    &__cards-box
+        display: flex
+        justify-content: space-between
+    &__icons-box
+        display: flex
+        justify-content: space-around
+        gap: 60px
+    &__first-elipse
+        position: absolute
+        top: 58px
+        right: 220px
+        z-index: -1
+    &__second-elipse
+        position: absolute
+        top: 360px
+        right: 1290px
+        z-index: -1
+
+.cards-item
+    position: relative
+    width: 360px
+    height: 360px
+    background: #E2E2E2
+    border-radius: 10px
+    display: flex
+    align-items: flex-end
+    margin-bottom: 25px
+    &__img
+        height: 335px
+    &__text
+        width: 280px
+        font-size: 36px
+        text-align: center
+        position: absolute
+        transform: rotate(90deg)
+        top: 145px
+        right: -49px
+.cards-items-orange
+    background: #F28B64
+
+.cards-items-blue
+    background: #5290EA
+
+.icons-item
+    display: inline-flex
+    align-items: center
+    &__img
+        margin-right: 20px
+        width: 80px
+    &__text
+        font-size: 18px
+        span
+            font-size: 48px
