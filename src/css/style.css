@@ -699,6 +699,7 @@ textarea {
 }
 
 .container {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -1000,5 +1001,59 @@ textarea {
 
 .icons-item__text span {
   font-size: 48px;
+}
+
+.third-section {
+  min-height: 640px;
+  background: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 167px;
+  padding-top: 46px;
+}
+
+.third-section__right-wrapper {
+  max-width: 480px;
+}
+
+.third-section__right-title {
+  margin-bottom: 20px;
+}
+
+.third-section__text {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.third-section__first-elipse {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+  z-index: -1;
+}
+
+.third-section__figure {
+  position: absolute;
+  top: 249px;
+  left: 15px;
+  z-index: -1;
+}
+
+.third-section__second-elipse {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+}
+
+.title__hr_top {
+  bottom: 75px;
 }
 /*# sourceMappingURL=style.css.map */
