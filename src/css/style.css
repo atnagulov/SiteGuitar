@@ -698,6 +698,25 @@ textarea {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MontserratT";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratT";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-family: "MontserratT";
+  font-weight: regular;
+}
+
 .container {
   position: relative;
   max-width: 1140px;
@@ -750,6 +769,7 @@ textarea {
 .nav-menu__list-item {
   margin-right: 64px;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .nav-menu__list-item:last-child {
@@ -852,6 +872,7 @@ textarea {
 .title {
   font-size: 72px;
   position: relative;
+  font-weight: bold;
 }
 
 .title__hr {
@@ -877,6 +898,7 @@ textarea {
   border: none;
   font-size: 18px;
   color: white;
+  font-weight: bold;
 }
 
 .buttons__icon-btn {
@@ -940,22 +962,22 @@ textarea {
 
 .second-section__first-elipse {
   position: absolute;
-  top: 58px;
-  right: 220px;
+  top: -91px;
+  right: -220px;
   z-index: -1;
 }
 
 .second-section__second-elipse {
   position: absolute;
   top: 360px;
-  right: 1290px;
+  right: 1030px;
   z-index: -1;
 }
 
 .cards-item {
   position: relative;
-  width: 360px;
-  height: 360px;
+  width: 390px;
+  height: 36zpx;
   background: #E2E2E2;
   border-radius: 10px;
   display: flex;
@@ -975,6 +997,7 @@ textarea {
   transform: rotate(90deg);
   top: 145px;
   right: -49px;
+  font-weight: bold;
 }
 
 .cards-items-orange {
@@ -1001,6 +1024,7 @@ textarea {
 
 .icons-item__text span {
   font-size: 48px;
+  font-weight: bold;
 }
 
 .third-section {
@@ -1009,6 +1033,7 @@ textarea {
   position: relative;
   overflow: hidden;
   z-index: 0;
+  margin-bottom: 39px;
 }
 
 .third-section__container {
@@ -1055,5 +1080,26 @@ textarea {
 
 .title__hr_top {
   bottom: 75px;
+}
+
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0px;
+}
+
+.footer__container {
+  min-width: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+}
+
+.footer__icons-box {
+  margin-bottom: 42px;
 }
 /*# sourceMappingURL=style.css.map */

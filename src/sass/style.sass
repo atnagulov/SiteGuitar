@@ -4,6 +4,22 @@
 *
     box-sizing: border-box
 
+@font-face 
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "MontserratT"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+html
+    font-family: "MontserratT"
+    font-weight: regular
+
 $color-blue: #5290EA
 $color-orange: #F28B64
 
@@ -45,6 +61,7 @@ $color-orange: #F28B64
     &__list-item
         margin-right: 64px
         font-size: 18px
+        font-weight: bold
         &:last-child
             margin-right: 0px
 
@@ -122,6 +139,7 @@ $color-orange: #F28B64
 .title
     font-size: 72px
     position: relative
+    font-weight: bold
     &__hr
         width: 65px
         position: absolute
@@ -142,6 +160,7 @@ $color-orange: #F28B64
         border: none
         font-size: 18px
         color: white
+        font-weight: bold
     &__icon-btn
         display: inline-flex
         align-items: center
@@ -183,19 +202,19 @@ $color-orange: #F28B64
         gap: 60px
     &__first-elipse
         position: absolute
-        top: 58px
-        right: 220px
+        top: -91px
+        right: -220px
         z-index: -1
     &__second-elipse
         position: absolute
         top: 360px
-        right: 1290px
+        right: 1030px
         z-index: -1
 
 .cards-item
     position: relative
-    width: 360px
-    height: 360px
+    width: 390px
+    height: 36zpx
     background: #E2E2E2
     border-radius: 10px
     display: flex
@@ -211,6 +230,7 @@ $color-orange: #F28B64
         transform: rotate(90deg)
         top: 145px
         right: -49px
+        font-weight: bold
 .cards-items-orange
     background: #F28B64
 
@@ -227,12 +247,14 @@ $color-orange: #F28B64
         font-size: 18px
         span
             font-size: 48px
+            font-weight: bold
 .third-section
     min-height: 640px
     background: #f0f0f0
     position: relative
     overflow: hidden
     z-index: 0
+    margin-bottom: 39px
     &__container
         display: flex
         flex-direction: row
@@ -262,6 +284,20 @@ $color-orange: #F28B64
         right: -120px
         top: -120px
 
-
 .title__hr_top
     bottom: 75px
+
+.footer
+    &__img
+        position: absolute
+        left: -250px
+        bottom: 0px
+    &__container
+        min-width: 272px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__title
+        margin-bottom: 20px
+    &__icons-box
+        margin-bottom: 42px
