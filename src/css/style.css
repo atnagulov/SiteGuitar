@@ -776,6 +776,11 @@ html {
   margin-right: 0px;
 }
 
+.nav-menu__list-item a {
+  text-decoration: none;
+  color: black;
+}
+
 .left-wrapper {
   position: relative;
 }
